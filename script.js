@@ -86,17 +86,20 @@ $(()=>
 
     let repositories =
     [
-        { name: 'Heros', description: 'heros description goes here' , button1: 'Test', button2: 'Test'},
-        { name: 'Heros', description: 'heros description goes here', button1: 'Test', button2: 'Test'},
-        { name: 'Heros', description: 'heros description goes here' , button1: 'Test', button2: 'Test'},
-        { name: 'Heros', description: 'heros description goes here' , button1: 'Test', button2: 'Test'},
-        { name: 'Heros', description: 'heros description goes here', button1: 'Test', button2: 'Test'},
-        { name: 'Heros', description: 'heros description goes here' , button1: 'Test', button2: 'Test'},
-        { name: 'Heros', description: 'heros description goes here' , button1: 'Test', button2: 'Test'},
-        { name: 'Heros', description: 'heros description goes here' , button1: 'Test', button2: 'Test'},
+        { name: 'Heros', description: 'heros description goes here' , button1: 'javascript', button2: 'angular', button3:'angularjs'},
+        { name: 'Heros', description: 'heros description goes here', button1: 'javascript', button2: 'angular', button3:'angularjs'},
+        { name: 'Heros', description: 'heros description goes here', button1: 'javascript', button2: 'angular', button3:'angularjs'},
+        { name: 'Heros', description: 'heros description goes here' , button1: 'javascript', button2: 'angular' ,button3:'angularjs'},
+        { name: 'Heros', description: 'heros description goes here' , button1: 'javascript', button2: 'angular',button3:'angularjs'},
+        { name: 'Heros', description: 'heros description goes here', button1: 'javascript', button2: 'angular',button3:'angularjs'},
+        { name: 'Heros', description: 'heros description goes here', button1: 'javascript', button2: 'angular',button3:'angularjs'},
+        { name: 'Heros', description: 'heros description goes here', button1: 'javascript', button2: 'angular',button3:'angularjs'},
+        
+        
+
     ];
 
-    $('#meadia').html(repositories.map(({name,description,button1,button2}) => `<div>
+    $('#meadia').html(repositories.map(({name,description,button1,button2,button3}) => `<div>
         <div class="title ">
             <h3 class="text-primary">${name}</h3>
         </div>
@@ -104,6 +107,8 @@ $(()=>
         <div class="button d-flex g-2">
             <button class="btn btn-info btn-sm rounded text-white">${button1}</button>
             <button class="btn btn-info btn-sm rounded text-white">${button2}</button>
+            <button class="btn btn-info btn-sm rounded text-white">${button3}</button>
+
         </div>
     </div>`)
     .join(''));
